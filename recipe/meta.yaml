@@ -1,5 +1,5 @@
 {% set name = "spade" %}
-{% set version = "0.4.11" %}
+{% set version = "0.4.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/lanl-aea/spade/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e07b0295727d6fec839210e8a19be42a2e45f2f5e7bae73516fd6b76659aa715
+  sha256: 5bd131e7c4b1fdc61ddb1c89eff5318935a7e869676b79804621382487a493d6
   # Use command: curl -sL <URL above> | openssl sha256
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
